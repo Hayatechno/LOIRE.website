@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Loire Beauty Salon</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/page.css" />
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">L<span>o</span>ire</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="nav-cta active">予約する</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ─── PAGE HERO ─────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1400&auto=format&fit=crop" alt="" />
+    </div>
+    <div class="page-hero-content">
+      <span class="section-label">Reservation & Contact</span>
+      <h1 class="section-title">Contact<br><em>Us</em></h1>
+    </div>
+  </div>
+
+  <!-- ─── CONTACT GRID ──────────────────────────────── -->
+  <section class="contact-grid">
+    <div class="contact-grid-inner">
+
+      <!-- 左：サロン情報 -->
+      <div class="contact-info">
+        <h2 class="contact-info-title">サロン<em style="font-style:italic; color:var(--orange);">情報</em></h2>
+        <div class="contact-detail-list">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">📍</div>
+            <div>
+              <div class="contact-detail-key">Address</div>
+              <div class="contact-detail-val">
+                〒542-0085<br>
+                大阪府大阪市中央区心斎橋筋 2-X-XX<br>
+                ○○ビル 3F<br>
+                <small style="font-size:12px;color:var(--text-muted);">地下鉄御堂筋線「心斎橋」駅 徒歩2分</small>
+              </div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">📞</div>
+            <div>
+              <div class="contact-detail-key">Phone</div>
+              <div class="contact-detail-val">
+                <strong><a href="tel:0601234567" style="color:var(--text); text-decoration:none;">06-0123-4567</a></strong><br>
+                <small style="font-size:12px;color:var(--text-muted);">受付時間：10:00 – 19:30（定休日除く）</small>
+              </div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">🕐</div>
+            <div>
+              <div class="contact-detail-key">Hours</div>
+              <div class="contact-detail-val">
+                月〜日：10:00 – 20:00<br>
+                定休日：<strong>毎週月曜日</strong><br>
+                <small style="font-size:12px;color:var(--text-muted);">祝日は通常営業／年末年始は要確認</small>
+              </div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">💳</div>
+            <div>
+              <div class="contact-detail-key">Payment</div>
+              <div class="contact-detail-val">
+                現金 / クレジットカード / PayPay<br>
+                iD / 交通系IC
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SNSリンク（コンパクト版） -->
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <a href="#" class="sns-link-btn sns-instagram" style="font-size:13px; padding:12px 24px;">
+            📷 Instagram でスタイルをチェック
+          </a>
+          <a href="#" class="sns-link-btn sns-line" style="font-size:13px; padding:12px 24px;">
+            💬 LINE でお問い合わせ
+          </a>
+          <a href="#" class="sns-link-btn sns-google" style="font-size:13px; padding:12px 24px;">
+            ⭐ Google でクチコミを見る
+          </a>
+        </div>
+
+        <!-- 地図プレースホルダー -->
+        <div class="contact-map">
+          <p style="text-align:center;">
+            🗺 Google マップを埋め込んでください<br>
+            <small>（iframeで差し替え可能）</small>
+          </p>
+        </div>
+      </div>
+
+      <!-- 右：予約フォーム -->
+      <div class="reservation-form">
+        <h3 class="form-title">Web 予約フォーム</h3>
+        <p class="form-subtitle">
+          内容を確認後、2〜3営業日以内にご連絡いたします。<br>
+          お急ぎの方はお電話でもどうぞ。
+        </p>
+        <form novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">お名前 <span>*</span></label>
+              <input type="text" class="form-input" placeholder="例：田中 花子" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">フリガナ</label>
+              <input type="text" class="form-input" placeholder="例：タナカ ハナコ" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">電話番号 <span>*</span></label>
+            <input type="tel" class="form-input" placeholder="例：090-0000-0000" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">メールアドレス</label>
+            <input type="email" class="form-input" placeholder="例：hello@example.com" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">ご希望日 <span>*</span></label>
+              <input type="date" class="form-input" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">ご希望時間</label>
+              <select class="form-select">
+                <option value="">時間帯を選択</option>
+                <option>10:00〜</option>
+                <option>11:00〜</option>
+                <option>12:00〜</option>
+                <option>13:00〜</option>
+                <option>14:00〜</option>
+                <option>15:00〜</option>
+                <option>16:00〜</option>
+                <option>17:00〜</option>
+                <option>18:00〜</option>
+                <option>19:00〜</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">ご希望メニュー <span>*</span></label>
+            <select class="form-select" required>
+              <option value="">メニューを選択</option>
+              <optgroup label="カット">
+                <option>レディースカット</option>
+                <option>メンズカット</option>
+                <option>前髪カット</option>
+              </optgroup>
+              <optgroup label="カラー">
+                <option>全体カラー</option>
+                <option>リタッチカラー</option>
+                <option>ハイライト</option>
+                <option>バレイヤージュ</option>
+                <option>インナーカラー</option>
+                <option>ブリーチ</option>
+              </optgroup>
+              <optgroup label="パーマ・縮毛矯正">
+                <option>デジタルパーマ</option>
+                <option>コールドパーマ</option>
+                <option>縮毛矯正</option>
+                <option>酸性ストレート</option>
+              </optgroup>
+              <optgroup label="トリートメント">
+                <option>ベーシックトリートメント</option>
+                <option>髄液トリートメント</option>
+                <option>頭皮スパ</option>
+              </optgroup>
+              <option>その他・組み合わせ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">担当スタイリスト希望</label>
+            <select class="form-select">
+              <option value="">指名なし（おまかせ）</option>
+              <option>田中 美花（Top Stylist）</option>
+              <option>佐藤 悠希（Stylist）</option>
+              <option>伊藤 花奈（Junior Stylist）</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">ご要望・メッセージ</label>
+            <textarea class="form-textarea" placeholder="髪の悩みや、インスタの参考写真のURL、当日の注意事項などお気軽にどうぞ。"></textarea>
+          </div>
+          <button type="submit" class="form-submit">予約リクエストを送信する →</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FAQ ───────────────────────────────────────── -->
+  <section class="faq-section">
+    <div class="faq-inner">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title" style="font-size: clamp(32px,4vw,52px); margin-bottom: 48px;">
+        よくある<em>ご質問</em>
+      </h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          当日予約はできますか？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            空き状況によっては当日予約も承っております。お電話（06-0123-4567）またはLINEにてお気軽にお問い合わせください。特に週末は混み合うため、なるべくお早めのご予約をおすすめします。
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          初めてでも相談に行けますか？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            もちろんです！ご予約時に「初回」とお伝えいただければ、カウンセリング時間を少し多めに設けます。参考にしたい髪型の写真（InstagramやSNSのURLでもOK！）があればご持参いただけると、より具体的なご提案ができます。
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          カラーとカットを同時にできますか？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            はい、組み合わせ施術は大歓迎です！カット＋カラー、カット＋パーマ、カラー＋トリートメントなど、ご要望に合わせてプランをご提案します。所要時間の目安もお伝えしますので、お気軽にご相談ください。
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          ブリーチをしたことがない髪でも大丈夫ですか？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            はい、もちろんです。ただし髪の状態によっては施術前のトリートメントをおすすめする場合があります。カウンセリングで髪の状態を確認した上で、最適なプランをご提案しますのでご安心ください。ケアブリーチを使用しているため、ダメージを最小限に抑えた施術が可能です。
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          子ども連れでも来られますか？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            施術中は安全のため、お子様が店内を歩き回ることが難しい場合がございます。授乳・子連れでご来店の際はご予約時にその旨をお伝えください。状況に合わせてご対応します。キッズカットも承っております。
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          キャンセルはどうすればいいですか？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            ご予約の変更・キャンセルはご予約日の前日17:00までにお電話またはLINEにてご連絡ください。当日キャンセルはキャンセル料（施術料金の50%）をいただく場合がございますのでご了承ください。
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          駐車場はありますか？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            専用駐車場はございませんが、周辺にコインパーキングが複数あります。地下鉄「心斎橋」駅が徒歩2分と非常にアクセスが良いため、公共交通機関のご利用をおすすめします。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── SNS ───────────────────────────────────────── -->
+  <section class="sns-section">
+    <div class="container">
+      <span class="section-label">Follow Us</span>
+      <h2 class="section-title">SNSで最新スタイルを<br><em>チェック</em></h2>
+      <div class="sns-links-row">
+        <a href="#" class="sns-link-btn sns-instagram">📷 Instagram @loire_salon</a>
+        <a href="#" class="sns-link-btn sns-line">💬 LINE 公式アカウント</a>
+        <a href="#" class="sns-link-btn sns-google">⭐ Google マップで見る</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">L<span>o</span>ire</a>
+        <p>あなたらしい美しさを見つける場所。<br>大阪・心斎橋にあるビューティーサロンです。</p>
+        <div class="social-links">
+          <a href="#">📷</a><a href="#">💬</a><a href="#">🐦</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="menu.html#cut">カット</a></li>
+          <li><a href="menu.html#color">カラー</a></li>
+          <li><a href="menu.html#perm">パーマ</a></li>
+          <li><a href="menu.html#treatment">トリートメント</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#">〒542-0085</a></li>
+          <li><a href="#">大阪市中央区心斎橋</a></li>
+          <li><a href="tel:0601234567">06-0123-4567</a></li>
+          <li><a href="#">月曜定休 10:00–20:00</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Loire Beauty Salon.</span>
+      <span>Made with ❤ in Osaka</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>gsap.registerPlugin(ScrollTrigger);</script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
